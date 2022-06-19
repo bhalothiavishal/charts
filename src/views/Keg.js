@@ -12,10 +12,10 @@ function Keg() {
 
     return (
         <div className="outerLayout">
-            <Header />
+            <Header title= "Keg Availability"/>
             <Nav />
             <aside>
-                <h1>this is keg</h1>
+                <h1>This is Keg Availability page</h1>
             </aside>
         </div>
     )

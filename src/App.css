@@ -62,8 +62,8 @@
   font-size: 24px;
 }
 
-.googlemap{
-  width: 60%;
+.googlemap {
+  /* width: 60%; */
   text-align: center;
   margin: 0 auto;
 }
@@ -88,6 +88,16 @@ aside {
 
 }
 
+.homebox {
+  height: 85px;
+  width: 200px;
+  float: left;
+  background-color: gainsboro;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
 .retailer-chart {
   width: 30%;
   float: left;
@@ -96,7 +106,7 @@ aside {
 
 .retailer-details {
   float: left;
-  width: 30%;
+  width: 25%;
   padding: 25px;
 }
 

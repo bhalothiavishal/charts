@@ -11,10 +11,10 @@ function Product() {
 
     return (
         <div className="outerLayout">
-            <Header />
+            <Header  title="Product Availability"/>
             <Nav />
             <aside>
-                <h1>this is product</h1>
+                <h1>This is Product Availability page</h1>
             </aside>
         </div>
     )
