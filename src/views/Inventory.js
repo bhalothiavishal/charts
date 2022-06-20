@@ -34,11 +34,10 @@ function Inventory() {
         setChartData(Object.values(products));
         setTypeName(Object.keys(products));
         setTypeCount(Object.values(products).map(v => v.count));
-        setFilterData(allData); // need to be change
+        setFilterData(allData); 
     }
 
     const handleFilter = (data) => {
-        // console.log('------>',data);
         setSelectedType(data.name);
         setFilterData(allData.filter((value) => value.Type == data.name));
     }
@@ -54,7 +53,7 @@ function Inventory() {
             <aside className={"row"}>
                 <InventoryChart chartData={chartData} handleFilter={handleFilter} />
                 <h4>{selectedType}</h4>
-                <InventoryTable filterData={filterData} />
+                <InventoryTable filterData={filterData} chartData={chartData} />
             </aside>
         </div>
     )
