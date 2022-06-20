@@ -28,7 +28,7 @@ function Retailer() {
                     color: '#' + Math.floor(Math.random() * 16777215).toString(16)
                 }
             }
-        })        
+        })
         setChartProduct(Object.values(products));
         setProductsName(Object.keys(products));
         setProductsCount(Object.values(products).map(v => v.count));
@@ -41,27 +41,31 @@ function Retailer() {
     }, [])
 
     return (
-        <div className="outerLayout">
+        <div className="container-full">
             <Header title="Retailer Full Product" />
-            <Nav />
-            <aside>
-                <div className="retailer-details">
-                    {
-                        chartProduct.map((item, i) => {
-                            return <div className="list" key={i}>
-                                <span style={{ backgroundColor: item.color, height: '15px', width: '15px', float: 'left', clear: 'both' }}></span>
-                                <span className="productName"> {item.name} </span> <span className="count"> {item.count}</span>
-                            </div>
-                        })
-                    }
-                </div>
-                <div className="retailer-chart">
-                    <RetailerChart productsName={productsName} productsCount={productsCount} colors={colors} />
-                </div>
-                <div className="retailer-details">
-                    <h2>  Total : {total} </h2>
-                </div>
-            </aside >
+            <div className="row mt-3">
+                <Nav />
+                <aside className="col-md-9 mt-5">
+                    <div className="row">
+                        <div className="col-md-3">
+                            {
+                                chartProduct.map((item, i) => {
+                                    return <div className="list" key={i}>
+                                        <span style={{ backgroundColor: item.color, height: '15px', width: '15px', float: 'left', clear: 'both' }}></span>
+                                        <span className="productName"> {item.name} </span> <span className="count"> {item.count}</span>
+                                    </div>
+                                })
+                            }
+                        </div>
+                        <div className="col-md-6">
+                            <RetailerChart productsName={productsName} productsCount={productsCount} colors={colors} />
+                        </div>
+                        <div className="col-md-3">
+                            <h2>  Total : {total} </h2>
+                        </div>
+                    </div>
+                </aside >
+            </div >
         </div >
     )
 }

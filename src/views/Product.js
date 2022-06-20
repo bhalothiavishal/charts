@@ -10,12 +10,14 @@ function Product() {
     }, [])
 
     return (
-        <div className="outerLayout">
-            <Header  title="Product Availability"/>
-            <Nav />
-            <aside>
-                <h1>This is Product Availability page</h1>
-            </aside>
+        <div className="container-full">
+            <Header title="Product Availability" />
+            <div className="row mt-3">
+                <Nav />
+                <aside className="col-md-9 mt-5">
+                    <h1>This is Product Availability page</h1>
+                </aside>
+            </div>
         </div>
     )
 }

@@ -2,8 +2,8 @@ import React, { useState, useMemo, useCallback } from 'react'
 import { GoogleMap, useJsApiLoader, useLoadScript, Marker } from '@react-google-maps/api';
 
 const containerStyle = {
-  width: '800px',
-  height: '350px'
+  width: '100%',
+  height: '500px'
 };
 
 function HomeMap({ lat, long, kegid, title }) {

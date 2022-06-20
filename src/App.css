@@ -63,7 +63,7 @@
 }
 
 .googlemap {
-  /* width: 60%; */
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 }
@@ -75,21 +75,28 @@ aside {
   text-align: center;
 }
 
-.head-appname {
-  float: left;
-  width: 20%;
-  text-align: center;
+.row {
+  --bs-gutter-x: 0rem !important;
 }
 
-.head-module {
-  float: left;
-  width: 80%;
-  text-align: center;
+.inventoryWidth {
+  width: 99%;
+}
 
+.pl-45 {
+  padding-left: 45px !important
+}
+
+.pr-30 {
+  padding-right: 30px !important
+}
+
+.fontSize {
+  font-size: 24px;
 }
 
 .homebox {
-  height: 85px;
+  /* height: 85px; */
   width: 200px;
   float: left;
   background-color: gainsboro;

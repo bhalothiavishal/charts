@@ -18,7 +18,6 @@ function InventoryTable({ filterData, chartData }) {
   }
 
   return (
-
     <div className="mt-5">
       <Table striped bordered={true} hover responsive="lg">
         <thead>
@@ -40,7 +39,7 @@ function InventoryTable({ filterData, chartData }) {
               </td>
               <td>{item.Type}</td>
               <td>{item.BatchNumber}</td>
-              <td>{item.location}</td>
+              <td>{item.placename}</td>
               <td>{item.Product}</td>
               <td>{item.volume}</td>
               <td>{getStatus(item.volume)}</td>

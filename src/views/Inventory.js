@@ -34,7 +34,7 @@ function Inventory() {
         setChartData(Object.values(products));
         setTypeName(Object.keys(products));
         setTypeCount(Object.values(products).map(v => v.count));
-        setFilterData(allData); 
+        setFilterData(allData);
     }
 
     const handleFilter = (data) => {
@@ -47,14 +47,18 @@ function Inventory() {
     }, [])
 
     return (
-        <div className="outerLayout">
+        <div className="container-full">
             <Header title="Inventory Page" />
-            <Nav />
-            <aside className={"row"}>
-                <InventoryChart chartData={chartData} handleFilter={handleFilter} />
-                <h4>{selectedType}</h4>
-                <InventoryTable filterData={filterData} chartData={chartData} />
-            </aside>
+            <div className="row mt-3">
+                <Nav />
+                <aside className="col-md-9">
+                    <div className="inventoryWidth">
+                        <InventoryChart chartData={chartData} handleFilter={handleFilter} />
+                    </div>
+                    <h4>{selectedType}</h4>
+                    <InventoryTable filterData={filterData} chartData={chartData} />
+                </aside>
+            </div>
         </div>
     )
 }

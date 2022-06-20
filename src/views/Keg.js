@@ -11,12 +11,14 @@ function Keg() {
     }, [])
 
     return (
-        <div className="outerLayout">
-            <Header title= "Keg Availability"/>
-            <Nav />
-            <aside>
-                <h1>This is Keg Availability page</h1>
-            </aside>
+        <div className="container-full">
+            <Header title="Keg Availability" />
+            <div className="row mt-3">
+                <Nav />
+                <aside className="col-md-9 mt-5">
+                    <h1>This is Keg Availability page</h1>
+                </aside>
+            </div>
         </div>
     )
 }

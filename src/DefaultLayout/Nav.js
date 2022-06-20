@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
-    <div className="sidebar">
+    <div className="sidebar col-md-3">
       <ul>
         <NavLink to="/"><li>Home</li></NavLink>
         <NavLink to="/inventory"><li>Inventory</li></NavLink>
