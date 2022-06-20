@@ -27,7 +27,7 @@ function Inventory() {
                     value: 1,
                     description: 1,
                     name: key,
-                    color: '#' + Math.floor(Math.random() * 16777215).toString(16)
+                    color: "#" + ("00000" + Math.floor(Math.random() * Math.pow(16, 6)).toString(16)).slice(-6)
                 }
             }
         })

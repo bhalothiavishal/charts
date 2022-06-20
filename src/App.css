@@ -117,16 +117,16 @@ aside {
   padding: 25px;
 }
 
-.retailer-details .list {
+.list {
   /* border-bottom: 1px solid; */
 }
 
-.retailer-details span.productName {
+span.productName {
   float: left;
   margin-left: 20px
 }
 
-.retailer-details span.count {
+span.count {
   float: right;
   margin-right: 40px
 }
